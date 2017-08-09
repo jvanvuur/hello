@@ -1,6 +1,8 @@
 machine:
   node:
     version: 8.2.0
+  services:
+    - docker
 
 # `npm install` should be run by default
 #dependencies:
