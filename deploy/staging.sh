@@ -9,7 +9,7 @@ export SERVICE_TOKEN=42816376-62C7-4F60-BF66-CB525401C500
 export AWS_REGION=us-east-1
 
 #download latest deploy script
-aws s3 cp "s3://flipp-platform-"$WISHABI_ENVIRONMENT"/deploy/platform-service-deploy.sh" platform-service-deploy.sh
+aws s3 cp "s3://flipp-platform-development/deploy/platform-service-deploy.sh" platform-service-deploy.sh
 chmod +x platform-service-deploy.sh
 #Execute the deployment Scripts
 ./platform-service-deploy.sh
