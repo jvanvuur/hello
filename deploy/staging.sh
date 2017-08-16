@@ -1,11 +1,10 @@
 cd ./deploy
 
 # ENV Variables that are used the the platform-service-deploy.sh script
-export ECS_CLUSTER=services-ecs-stg
-export ECS_SERVICE=hello-stg
-export SERVICE_CONTAINER_NAME=hello-stg
-export CONTAINER_IMAGE=280159221453.dkr.ecr.us-east-1.amazonaws.com/hello:${CIRCLE_BRANCH}-${CIRCLE_BUILD_NUM}
-export SERVICE_TOKEN=42816376-62C7-4F60-BF66-CB525401C500
+export ECS_CLUSTER=$ECS_CLUSTER_STG
+export ECS_SERVICE=$ECS_SERVICE_STG
+export SERVICE_CONTAINER_NAME=$ECS_SERVICE_STG
+export CONTAINER_IMAGE=280159221453.dkr.ecr.us-east-1.amazonaws.com/curl-hello-2:${CIRCLE_BRANCH}-${CIRCLE_BUILD_NUM}
 export AWS_REGION=us-east-1
 export WISHABI_ENVIRONMENT=development
 
