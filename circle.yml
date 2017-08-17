@@ -24,6 +24,5 @@ deployment:
   staging:
     branch: staging
     commands:
-      - curl -X GET https://platform-service-updater.wishabidev.com
       - chmod +x ./deploy/staging.sh
       - ./deploy/staging.sh
