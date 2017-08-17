@@ -4,9 +4,7 @@ cd ./deploy
 export ECS_CLUSTER=$ECS_CLUSTER_STG
 export ECS_SERVICE=$ECS_SERVICE_STG
 export SERVICE_CONTAINER_NAME=$ECS_SERVICE_STG
-export CONTAINER_IMAGE=280159221453.dkr.ecr.us-east-1.amazonaws.com/curl-hello-2:${CIRCLE_BRANCH}-${CIRCLE_BUILD_NUM}
-export AWS_REGION=us-east-1
-export WISHABI_ENVIRONMENT=development
+export CONTAINER_IMAGE=280159221453.dkr.ecr.us-east-1.amazonaws.com/${ECS_SERVICE}:${CIRCLE_BRANCH}-${CIRCLE_BUILD_NUM}
 
 #download latest deploy script
 aws s3 cp "s3://flipp-platform-development/deploy/platform-service-deploy.sh" platform-service-deploy.sh
