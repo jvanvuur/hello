@@ -6,7 +6,7 @@ const router = express.Router()
 app.use(router);
 
 app.get('/', (req, res) => {
-  res.send('hello world!! new commit')
+  res.send('hello world!! new commit x2')
 })
 
 
